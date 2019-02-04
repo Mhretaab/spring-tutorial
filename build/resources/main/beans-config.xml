@@ -31,4 +31,12 @@
     <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
     <bean name="myService" class="com.tutorial.spring.services.MyService" />
     <bean name="myAwareService" class="com.tutorial.spring.services.MyAwareService" />
+
+    <beans profile="Development">
+        <import resource="dev-config-context.xml"/>
+    </beans>
+
+    <beans profile="Production">
+        <import resource="prod-config-context.xml"/>
+    </beans>
 </beans>
