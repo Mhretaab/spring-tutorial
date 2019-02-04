@@ -1,0 +1,22 @@
+group 'com.tutorial.spring'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //minimum requirements for IoC and Dependency Injection
+    compile group: 'org.springframework', name: 'spring-core', version: '5.1.4.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context', version: '5.1.4.RELEASE'
+    compile group: 'org.springframework', name: 'spring-beans', version: '5.1.4.RELEASE'
+
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    testCompile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

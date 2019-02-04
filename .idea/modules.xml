@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-spring.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-spring_main.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-spring_main.iml" group="tutorial-spring" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-spring_test.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-spring_test.iml" group="tutorial-spring" />
+    </modules>
+  </component>
+</project>
