@@ -2,7 +2,7 @@ package com.tutorial.spring.services;
 
 import com.tutorial.spring.models.Employee;
 
-public class MyEmployeeServiceImpl implements EmployeeService{
+public class MyEmployeeServiceImpl/* implements EmployeeService*/{
 
 	private Employee employee;
 

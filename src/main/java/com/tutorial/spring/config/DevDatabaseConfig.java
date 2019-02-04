@@ -14,17 +14,17 @@ ApplicationContext.getEnvironment().setActiveProfiles(“ProfileName”);
 
 @Profile("Development")
 @Configuration
-public class DevDatabaseConfig implements DatabaseConfig {
+public class DevDatabaseConfig /*implements DatabaseConfig */{
  
-    @Override
+    /*@Override
     @Bean
     public DataSource createDataSource() {
         System.out.println("Creating DEV database");
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        /*
+        *//*
          * Set MySQL specific properties for Development Environment
-         */
+         *//*
         return dataSource;
-    }
+    }*/
  
 }

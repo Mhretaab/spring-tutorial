@@ -1,9 +1,6 @@
 package com.tutorial.spring.config;
 
-import com.tutorial.spring.models.Employee;
-import com.tutorial.spring.services.EmployeeServiceImpl;
 import com.tutorial.spring.services.MyAwareService;
-import com.tutorial.spring.services.MyEmployeeServiceImpl;
 import com.tutorial.spring.services.MyService;
 import org.springframework.context.annotation.*;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
@@ -16,7 +13,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 @PropertySource(value = { "classpath:application.properties" })
 public class BeanConfiguration {
 
-    @Bean//(name = "employee")
+   /* @Bean//(name = "employee")
     public Employee getEmployee(){
         return new Employee();
     }
@@ -33,7 +30,7 @@ public class BeanConfiguration {
         MyEmployeeServiceImpl service = new MyEmployeeServiceImpl();
         service.setEmployee(getEmployee());
         return service;
-    }
+    }*/
 
     @Bean
     public CommonAnnotationBeanPostProcessor getCommonAnnotationBeanPostProcessor(){

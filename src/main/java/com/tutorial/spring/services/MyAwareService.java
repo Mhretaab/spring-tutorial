@@ -72,7 +72,7 @@ public class MyAwareService implements ApplicationContextAware,
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
         System.out.println("setBeanFactory called");
         System.out.println("setBeanFactory:: employee bean singleton="
-                + beanFactory.isSingleton("getEmployee"));
+                /*+ beanFactory.isSingleton("getEmployee")*/);
     }
 
     //ApplicationEventPublisherAware

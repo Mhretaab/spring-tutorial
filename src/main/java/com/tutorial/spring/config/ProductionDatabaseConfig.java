@@ -14,17 +14,17 @@ ApplicationContext.getEnvironment().setActiveProfiles(“ProfileName”);
 
 @Profile("Production")
 @Configuration
-public class ProductionDatabaseConfig implements DatabaseConfig {
+public class ProductionDatabaseConfig /*implements DatabaseConfig */{
  
-    @Override
+    /*@Override
     @Bean
     public DataSource createDataSource() {
         System.out.println("Creating Production database");
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        /*
+        *//*
          * Set ORACLE specific properties for Production environment
-         */
+         *//*
         return dataSource;
-    }
+    }*/
  
 }
