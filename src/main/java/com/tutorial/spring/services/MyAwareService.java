@@ -18,6 +18,9 @@ public class MyAwareService implements ApplicationContextAware,
         ApplicationEventPublisherAware, BeanClassLoaderAware, BeanFactoryAware,
         BeanNameAware, EnvironmentAware, ImportAware, ResourceLoaderAware {
 
+    public MyAwareService() {
+    }
+
     //ApplicationContextAware
     @Override
     public void setApplicationContext(ApplicationContext ctx)
